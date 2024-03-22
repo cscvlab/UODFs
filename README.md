@@ -81,7 +81,7 @@ python scripts/PostProccessing.py
 ```
 
 
-## Eval
+## Evaluation
 ```
 python scripts/eval_cd.py
 ```
