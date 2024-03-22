@@ -1,0 +1,30 @@
+ninja_required_version = 1.3
+cxx = c++
+nvcc = /usr/local/cuda/bin/nvcc
+
+cflags = -pthread -B /home/cscvlab/anaconda3/envs/uodf/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DEIGEN_GPUCC -I/media/cscvlab/d1/project/lyj_2024/UODF_CVPR/third_party/ngpmesh/include -I/media/cscvlab/d1/project/lyj_2024/UODF_CVPR/third_party/ngpmesh/dependencies/eigen -I/media/cscvlab/d1/project/lyj_2024/UODF_CVPR/third_party/ngpmesh/dependencies/pybind11/include -I/usr/local/include -I/usr/include -I/usr/local/cuda-11.1/targets/x86_64-linux/include -I/home/cscvlab/anaconda3/envs/uodf/lib/python3.8/site-packages/torch/include -I/home/cscvlab/anaconda3/envs/uodf/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/cscvlab/anaconda3/envs/uodf/lib/python3.8/site-packages/torch/include/TH -I/home/cscvlab/anaconda3/envs/uodf/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/cscvlab/anaconda3/envs/uodf/include/python3.8 -c
+post_cflags = -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1013"' -DTORCH_EXTENSION_NAME=pyngpmesh -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
+cuda_cflags = -DEIGEN_GPUCC -I/media/cscvlab/d1/project/lyj_2024/UODF_CVPR/third_party/ngpmesh/include -I/media/cscvlab/d1/project/lyj_2024/UODF_CVPR/third_party/ngpmesh/dependencies/eigen -I/media/cscvlab/d1/project/lyj_2024/UODF_CVPR/third_party/ngpmesh/dependencies/pybind11/include -I/usr/local/include -I/usr/include -I/usr/local/cuda-11.1/targets/x86_64-linux/include -I/home/cscvlab/anaconda3/envs/uodf/lib/python3.8/site-packages/torch/include -I/home/cscvlab/anaconda3/envs/uodf/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/cscvlab/anaconda3/envs/uodf/lib/python3.8/site-packages/torch/include/TH -I/home/cscvlab/anaconda3/envs/uodf/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/cscvlab/anaconda3/envs/uodf/include/python3.8 -c
+cuda_post_cflags = -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' --extended-lambda -Xcompiler=-Wno-float-conversion -Xcompiler=-fno-strict-aliasing -Xcompiler=-fPIC --expt-relaxed-constexpr -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1013"' -DTORCH_EXTENSION_NAME=pyngpmesh -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -std=c++14
+ldflags = 
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+rule cuda_compile
+  depfile = $out.d
+  deps = gcc
+  command = $nvcc  $cuda_cflags -c $in -o $out $cuda_post_cflags
+
+
+
+build /media/cscvlab/d1/project/lyj_2024/UODF_CVPR/third_party/ngpmesh/build/temp.linux-x86_64-cpython-38/src/NGPMesh.o: cuda_compile /media/cscvlab/d1/project/lyj_2024/UODF_CVPR/third_party/ngpmesh/src/NGPMesh.cu
+build /media/cscvlab/d1/project/lyj_2024/UODF_CVPR/third_party/ngpmesh/build/temp.linux-x86_64-cpython-38/src/TriangleBvh.o: cuda_compile /media/cscvlab/d1/project/lyj_2024/UODF_CVPR/third_party/ngpmesh/src/TriangleBvh.cu
+build /media/cscvlab/d1/project/lyj_2024/UODF_CVPR/third_party/ngpmesh/build/temp.linux-x86_64-cpython-38/src/python-api.o: cuda_compile /media/cscvlab/d1/project/lyj_2024/UODF_CVPR/third_party/ngpmesh/src/python-api.cu
+
+
+
+
+
