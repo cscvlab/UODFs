@@ -1,4 +1,0 @@
-# ninja log v5
-1	7818	1710740126515516700	/media/cscvlab/d1/project/lyj_2024/UODF_CVPR/third_party/ngpmesh/build/temp.linux-x86_64-cpython-38/src/TriangleBvh.o	e3322ef5a62f05f8
-1	8243	1710740126942191800	/media/cscvlab/d1/project/lyj_2024/UODF_CVPR/third_party/ngpmesh/build/temp.linux-x86_64-cpython-38/src/NGPMesh.o	743f647c626bcbb6
-1	11960	1710740130654629100	/media/cscvlab/d1/project/lyj_2024/UODF_CVPR/third_party/ngpmesh/build/temp.linux-x86_64-cpython-38/src/python-api.o	b5593e1ad5b68849
