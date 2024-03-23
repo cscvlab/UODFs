@@ -2,9 +2,11 @@
 
 This repository is the official implementation of the paper (accepted by CVPR 2024): 
 
-**Unsigned Orthogonal Distance Fields: An Accurate Neural Implicit Representation for Diverse 3D Shapes**
+**Unsigned Orthogonal Distance Fields: An Accurate Neural Implicit Representation for Diverse 3D Shapes.**
 
-**Description**. Neural implicit representation of geometric shapes has witnessed considerable advancements in recent years. However, common distance field based implicit representations, specifically signed distance field (SDF) for watertight shapes or unsigned distance field (UDF) for arbitrary shapes, routinely suffer from degradation of reconstruction accuracy when converting to explicit surface points and meshes. In this paper, we introduce a novel neural implicit representation based on unsigned orthogonal distance fields (UODFs). In UODFs, the minimal unsigned distance from any spatial point to the shape surface is defined solely in one orthogonal direction, contrasting with the multi-directional determination made by SDF and UDF. Consequently, every point in the 3D UODFs can directly access its closest surface points along three orthogonal directions. This distinctive feature leverages the accurate reconstruction of surface points without interpolation errors. We verify the effectiveness of UODFs through a range of reconstruction examples, extending from simple watertight or non-watertight shapes to complex shapes that include hollows, internal or assembling structures.
+**Authors:** Yujie Lu, Long Wan, Nayu Ding, Yulong Wang, Shuhan Shen, Shen Cai*, Lin Gao*.
+
+**Description in one sentence**. Different from SDF and UDF, each point in UODFs defines the distances along the three orthogonal directions and directly infers the nearest surface points (simulating the characteristics of the laser), avoiding the introduction of interpolation errors and improving the reconstruction accuracy.
 
 ![alt text](assets/architecture_figure.png)
 
@@ -15,7 +17,7 @@ This repository is the official implementation of the paper (accepted by CVPR 20
 
 ## Visualization
 
-| Dragon | Shark | T-shirt |
+| Dragon | Sliced fish in box | T-shirt |
 | :----: | :----: | :----: |
 | ![](assets/stanford_Dragon.gif) | ![](assets/Shark_new.gif) | ![](assets/978_Tshirt.gif) |
 
@@ -92,7 +94,7 @@ python scripts/eval_cd.py
 @inproceedings{UODFs,
   title={Unsigned Orthogonal Distance Fields: An Accurate Neural Implicit Representation for Diverse 3D Shapes},
   author={Lu, Yujie and Wan, Long and Ding, Nayu and Wang, Yulong and Shen, Shuhan and Cai, Shen and Gao, Lin},
-  booktitle={Computer Vision and Pattern Recognition (CVPR)},
+  booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2024}
 }
 ```
