@@ -6,7 +6,7 @@ This repository is the official implementation of the paper (accepted by CVPR 20
 
 **Authors:** Yujie Lu, Long Wan, Nayu Ding, Yulong Wang, Shuhan Shen, Shen Cai*, Lin Gao*.
 
-**Description in one sentence**. Different from SDF and UDF, each point in UODFs defines the distances along the three orthogonal directions and directly infers the nearest surface points (simulating the characteristics of the laser), avoiding the introduction of interpolation errors and improving the reconstruction accuracy.
+**Description in one sentence**. Different from SDF and UDF, each point in UODFs defines the distances along the three orthogonal directions (LR, FB, UD in the figure) and directly infers the nearest surface points (simulating the characteristics of the laser), avoiding the introduction of interpolation errors and improving the reconstruction accuracy.
 
 ![alt text](assets/architecture_figure.png)
 
