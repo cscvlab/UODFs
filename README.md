@@ -19,7 +19,7 @@ This repository is the official implementation of the paper (accepted by CVPR 20
 
 | Dragon | Sliced fish in box | T-shirt |
 | :----: | :----: | :----: |
-| ![](assets/stanford_Dragon.gif) | ![](assets/Shark_new.gif) | ![](assets/978_Tshirt.gif) |
+| ![](assets/Dragon_new.gif) | ![](assets/Sliced_fish_in_box_new.gif) | ![](assets/978_Tshirt_new.gif) |
 
 
 
@@ -50,7 +50,7 @@ Python 3 dependencies:
 - pandas
 - tensorboard
 
-To install the dependencies,first go to third_party to install pyngpmesh.(Libraries separated from instant-ngp)
+To install the dependencies, begin by navigating to the third_party directory and proceed to install pyngpmesh, which is a library separated from instant-ngp.
 ```
 cd third_party/ngpmesh
 pip install .
@@ -69,15 +69,15 @@ You can use the example dataset in  `datasets/thingi32_normalization/` or you ca
 All configurable settings are accessible within the `scripts/utils/options.py`
 
 ## Run
-To train a single model,you can use it.
+To train a single model, you can use it.
 ```
 python scripts/train_main.py
 ```
-or if you need to test,you can use the following command.
+or if you need to test, you can use the following command.
 ```
 python scripts/test_main.py
 ```
-To generate fused point clouds and mesh, you can utilzed the following:
+To generate fused point clouds and mesh, you can utilze the following:
 ```
 python scripts/PostProccessing.py
 ```
