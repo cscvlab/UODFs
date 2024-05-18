@@ -36,7 +36,6 @@ requests-oauthlib==1.4.0
 rsa==4.9
 scipy==1.10.1
 six==1.16.0
-sol-nglod==0.0.0
 tensorboard==2.14.0
 tensorboard-data-server==0.7.2
 torch==1.12.0+cu113
