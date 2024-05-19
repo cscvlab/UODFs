@@ -5,8 +5,8 @@ def parse_args():
     parse =  argparse.ArgumentParser()
     parse.add_argument('--batch_size',type = int,default= 1024,help = 'input batch size')
     parse.add_argument('--epoch',type = int,default= 100 ,help = 'number of epoch in training')
-    parse.add_argument('--train_res',type = int,default= 256 ,help = 'number of training resolution of model')
-    parse.add_argument('--train_sample_num',type = int,default= 256 ,help = 'training sample number of model')
+    parse.add_argument('--train_res',type = int,default= 256 + 1 ,help = 'number of training resolution of model')
+    parse.add_argument('--train_sample_num',type = int,default= 256 + 1,help = 'training sample number of model')
     parse.add_argument('--test_res',type = int,default= 32 ,help = 'number of testing resolution of model')
     parse.add_argument('--file_path',type = str,default= None ,help = 'mesh(obj) path of meshPath')
     parse.add_argument('--file_name',type = str,default= None ,help = 'mesh(obj) name of meshPath')
@@ -42,10 +42,10 @@ def parse_args():
 
 
     '''training setting'''
-    parse.add_argument('--sample_num',type = int,default= 256 + 1 ,help = 'sample num of hit rays')
+    parse.add_argument('--sample_num',type = int,default=  + 1 ,help = 'sample num of hit rays')
 
     '''pred setting'''
-    parse.add_argument('--pred_res',type = int,default= 256 ,
+    parse.add_argument('--pred_res',type = int,default= 256 + 1,
                        help = 'pred resolution of models')
     parse.add_argument('--postprocessingThreshold',type = int,default= 1 ,
                        help = 'number of points to aggregation')
