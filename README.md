@@ -24,6 +24,8 @@ This repository is the official implementation of the paper (accepted by CVPR 20
 
 
 ## Installation:Setup the environment
+The version of PyTorch we use is 1.12.0 and the operating system is Ubuntu 20.04.
+
 ### Create environment
 ```
 conda create --name uodf python=3.8
