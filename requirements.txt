@@ -17,7 +17,7 @@ kiwisolver==1.4.5
 Markdown==3.6
 MarkupSafe==2.1.5
 matplotlib==3.7.5
-mesh2sdf==0.1.0
+mesh2sdf==1.1.0
 mitsuba==3.3.0
 numpy==1.24.4
 oauthlib==3.2.2
