@@ -42,7 +42,7 @@ def parse_args():
 
 
     '''training setting'''
-    parse.add_argument('--sample_num',type = int,default=  + 1 ,help = 'sample num of hit rays')
+    parse.add_argument('--sample_num',type = int,default= 256 + 1 ,help = 'sample num of hit rays')
 
     '''pred setting'''
     parse.add_argument('--pred_res',type = int,default= 256 + 1,
