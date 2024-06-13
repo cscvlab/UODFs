@@ -19,7 +19,7 @@ This repository is the official implementation of the paper (accepted by CVPR 20
 | :----: | :----: | :----: |
 | ![](assets/Dragon_new.gif) | ![](assets/Sliced_fish_in_box_new.gif) | ![](assets/978_Tshirt_new.gif) |
 
-
+PS: All reconstruction results are **free of fine-tuning**.
 
 ## Installation:Setup the environment
 The version of PyTorch we use is 1.12.0 and the operating system is Ubuntu 20.04.
