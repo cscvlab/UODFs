@@ -11,7 +11,7 @@ This repository is the official implementation of the paper (accepted by CVPR 20
 ![alt text](assets/architecture_figure.png)
 
 
-[[Project Page]](http://www.cscvlab.com/research/UODFs/index.html)   [[Paper]](https://arxiv.org/abs/2403.01414)   [[Video(bilibili)]](https://www.bilibili.com/video/BV19f421d77S/)  [[Video(youtube)]](https://www.youtube.com/watch?v=uuJYVKoixp0) 
+[[Project Page]](http://www.cscvlab.com/research/UODFs/index.html)  &nbsp  [[Paper]](https://arxiv.org/abs/2403.01414) &nbsp [[Video(bilibili)]](https://www.bilibili.com/video/BV19f421d77S/) &nbsp [[Video(youtube)]](https://www.youtube.com/watch?v=uuJYVKoixp0) 
 
 
 
