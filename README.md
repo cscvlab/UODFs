@@ -6,7 +6,8 @@ This repository is the official implementation of the paper (accepted by CVPR 20
 
 **Authors:** Yujie Lu, Long Wan, Nayu Ding, Yulong Wang, Shuhan Shen, Shen Cai*, Lin Gao*.
 
-**Links:** [[Project Page]](http://www.cscvlab.com/research/UODFs/index.html)      [[Paper]](https://arxiv.org/abs/2403.01414)        [[Video(bilibili)]](https://www.bilibili.com/video/BV19f421d77S/)       [[Video(youtube)]](https://www.youtube.com/watch?v=uuJYVKoixp0) 
+**Links:** [[Project Page]](http://www.cscvlab.com/research/UODFs/index.html)      [[Paper]](https://openaccess.thecvf.com/content/CVPR2024/papers/Lu_Unsigned_Orthogonal_Distance_Fields_An_Accurate_Neural_Implicit_Representation_for_CVPR_2024_paper.pdf)        [[Video(bilibili)]](https://www.bilibili.com/video/BV19f421d77S/)       [[Video(youtube)]](https://www.youtube.com/watch?v=uuJYVKoixp0) 
+<!--https://arxiv.org/abs/2403.01414-->
 
 **Description in one sentence**. Different from SDF and UDF, each point in UODFs defines the distances along the three orthogonal directions (LR, FB, UD in the figure) and directly infers the nearest surface points (simulating the characteristics of the laser), avoiding the introduction of interpolation errors and improving the reconstruction accuracy.
 
