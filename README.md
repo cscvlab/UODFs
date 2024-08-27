@@ -91,11 +91,12 @@ python scripts/eval_cd.py
 ## Citation
 
 ```bibtex
-@inproceedings{UODFs,
+@InProceedings{UODFs,
   title={Unsigned Orthogonal Distance Fields: An Accurate Neural Implicit Representation for Diverse 3D Shapes},
   author={Lu, Yujie and Wan, Long and Ding, Nayu and Wang, Yulong and Shen, Shuhan and Cai, Shen and Gao, Lin},
   booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2024}
+  year={2024},
+  page={20551-20560}
 }
 ```
 
