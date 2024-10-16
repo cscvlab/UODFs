@@ -292,7 +292,7 @@ if __name__ == "__main__":
 
     filename = os.listdir(args.meshPath)
     filename.sort()
-    res = 256
+    res = args.pred_res
 
     for i in range(len(filename)):
         timer = Timer()
