@@ -3,7 +3,7 @@ import torch
 import trimesh
 import pyngpmesh
 
-mesh = trimesh.load_mesh('/media/cscvlab/d1/project/lyj/UODF_new/thingi32_normalization/44234.obj', '.obj')
+mesh = trimesh.load_mesh('../datasets/thingi32_normalization/44234.obj', '.obj')
 print(mesh)
 print(mesh.triangles.shape)
 
