@@ -14,7 +14,7 @@ In addition, this repository provides the implementation of the newly updated wo
 
 In this journal manuscript, we significantly improve the speed of surface point estimation by introducing single-point prediction and tri-plane encoding.
 
-**Core idea of UODFs in one sentence**. Different from SDF and UDF, each point in UODFs defines the distances along the three orthogonal directions (LR, FB, UD in the figure) and directly infers the nearest surface points (simulating the characteristics of the laser), avoiding the introduction of interpolation errors and improving the reconstruction accuracy.
+**Core idea in one sentence**. Different from SDF and UDF, each point in UODFs defines the distances along the three orthogonal directions (LR, FB, UD in the figure) and directly infers the nearest surface points (simulating the characteristics of the laser), avoiding the introduction of interpolation errors and improving the reconstruction accuracy.
 
 ![alt text](assets/architecture_figure.png)
 
