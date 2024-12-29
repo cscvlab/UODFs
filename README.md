@@ -9,7 +9,8 @@ This repository is the official implementation of our CVPR 2024 paper:
 In addition, this repository provides the implementation of the newly updated work (submitted to TVCG):
 
 **Unsigned Orthogonal Distance Fields: A Neural Implicit Representation for Fast and Accurate Reconstruction of Diverse 3D Shapes.**
-**Links:** [[Project Page]](http://www.cscvlab.com/research/fastUODFs/index.html)      [[Paper]]()        [[Video(bilibili)]]()       [[Video(youtube)]]() 
+
+**FastUODFs' Links:** [[Project Page]](http://www.cscvlab.com/research/fastUODFs/index.html)      [[Paper]]()        [[Video(bilibili)]]()       [[Video(youtube)]]() 
 
 In this journal manuscript, we significantly improve the speed of surface point estimation by introducing single-point prediction and tri-plane encoding.
 
