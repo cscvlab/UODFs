@@ -1,18 +1,21 @@
 # Unsigned Orthogonal Distance Fields (UODFs)
 
-This repository is the official implementation of the paper (accepted by CVPR 2024): 
+This repository is the official implementation of our CVPR 2024 paper: 
 
 **Unsigned Orthogonal Distance Fields: An Accurate Neural Implicit Representation for Diverse 3D Shapes.**
 
-**Authors:** Yujie Lu, Long Wan, Nayu Ding, Yulong Wang, Shuhan Shen, Shen Cai*, Lin Gao*.
-
 **Links:** [[Project Page]](http://www.cscvlab.com/research/UODFs/index.html)      [[Paper]](https://openaccess.thecvf.com/content/CVPR2024/papers/Lu_Unsigned_Orthogonal_Distance_Fields_An_Accurate_Neural_Implicit_Representation_for_CVPR_2024_paper.pdf)        [[Video(bilibili)]](https://www.bilibili.com/video/BV19f421d77S/)       [[Video(youtube)]](https://www.youtube.com/watch?v=uuJYVKoixp0) 
-<!--https://arxiv.org/abs/2403.01414-->
 
-**Description in one sentence**. Different from SDF and UDF, each point in UODFs defines the distances along the three orthogonal directions (LR, FB, UD in the figure) and directly infers the nearest surface points (simulating the characteristics of the laser), avoiding the introduction of interpolation errors and improving the reconstruction accuracy.
+In addition, this repository provides the implementation of the newly updated work (submitted to TVCG):
+
+**Unsigned Orthogonal Distance Fields: A Neural Implicit Representation for Fast and Accurate Reconstruction of Diverse 3D Shapes.**
+**Links:** [[Project Page]](http://www.cscvlab.com/research/fastUODFs/index.html)      [[Paper]]()        [[Video(bilibili)]]()       [[Video(youtube)]]() 
+
+In this journal manuscript, we significantly improve the speed of surface point estimation by introducing single-point prediction and tri-plane encoding.
+
+**Core idea of UODFs in one sentence**. Different from SDF and UDF, each point in UODFs defines the distances along the three orthogonal directions (LR, FB, UD in the figure) and directly infers the nearest surface points (simulating the characteristics of the laser), avoiding the introduction of interpolation errors and improving the reconstruction accuracy.
 
 ![alt text](assets/architecture_figure.png)
-
 
 ## Visualization
 
