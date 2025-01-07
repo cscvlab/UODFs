@@ -10,7 +10,7 @@ In addition, this repository provides the implementation of the newly updated wo
 
 **Unsigned Orthogonal Distance Fields: A Neural Implicit Representation for Fast and Accurate Reconstruction of Diverse 3D Shapes.**
 
-**FastUODFs' Links:** [[Project Page]](http://www.cscvlab.com/research/fastUODFs/index.html)      [[Paper]]()        [[Video(bilibili)]](https://www.bilibili.com/video/BV1Af6HY5EdS/)       [[Video(youtube)]](https://youtu.be/Qo-22KU1zl0) 
+**FastUODFs' Links:** [[Project Page (Coming soon)]](http://www.cscvlab.com/research/fastUODFs/index.html)         [[Video(bilibili)]](https://www.bilibili.com/video/BV1Af6HY5EdS/)       [[Video(youtube)]](https://youtu.be/Qo-22KU1zl0) 
 
 In this journal manuscript, we significantly improve the speed of surface point estimation by introducing single-point prediction and tri-plane encoding.
 
