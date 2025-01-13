@@ -72,7 +72,7 @@ if __name__ == "__main__":
     filename.sort()
 
     res = args.pred_res
-    args.use_pcd_post_processing = False     # set False after using test_single.py
+    args.use_pcd_post_processing = True     # set False after using test_single.py
     args.use_possion_rec = True
     args.use_delete_mesh = True
 
