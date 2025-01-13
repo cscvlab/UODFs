@@ -72,7 +72,7 @@ if __name__ == "__main__":
     filename.sort()
 
     res = args.pred_res
-    args.use_pcd_post_processing = True
+    args.use_pcd_post_processing = False     # set False after using test_single.py
     args.use_possion_rec = True
     args.use_delete_mesh = True
 
@@ -80,6 +80,8 @@ if __name__ == "__main__":
 
     for i in range(len(filename)):
         f = filename[i].split(".")[0]
+        
+        # if f in ["131971"]:
 
         obj_dict = dict()
         obj_dict["name"] = f
@@ -94,16 +96,18 @@ if __name__ == "__main__":
         print("--------------Point cloud PostPocessing Start-------------")
         if args.use_pcd_post_processing:
             pp.pcdpostprocessing(res,f,obj_dict,test_path = test_path)
+        else :
+            test_path = test_path + "single_"
         print()
 
- 
+
         print("--------------Reconstruction WaterTight Model------------")
         if args.use_possion_rec:
             pp.possion_reconstruction(res,test_path)
         print()
 
-        # print("--------------Deg Mesh to Non-WaterTight Model ------------")
-        # degreThreshold = 2 / res * 0.08
-        # if args.use_delete_mesh:
-        #     pp.delete_mesh_from_possion(res,test_path,degreThreshold)
-        # print()
+        print("--------------Deg Mesh to Non-WaterTight Model ------------")
+        degreThreshold = 2 / res * 0.007
+        if args.use_delete_mesh:
+            pp.delete_mesh_from_possion(res,test_path,degreThreshold)
+        print() 
