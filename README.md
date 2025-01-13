@@ -84,7 +84,15 @@ python scripts/test_main.py
 ```
 To generate fused point clouds and mesh, you can utilze the following:
 ```
-python scripts/PostProccessing.py
+python scripts/PostProcessing.py
+```
+If you want to use the single-point(S.P.) based GEP estimation method, you can use the following command.
+```
+python scripts/test_single.py
+```
+After that, you can utilize the following command after setting args.use_pcd_post_processing to False at line 75:
+```
+python scripts/PostProcessing.py
 ```
 
 
