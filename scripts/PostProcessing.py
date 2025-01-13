@@ -9,7 +9,7 @@ from utils.options import parse_args
 from utils.timer import Timer
 
 
-class PostProccess():
+class PostProcess():
     def __init__(self,args):
         self.args = args
     def pcdpostprocessing(self,res,f,obj_dict,test_path):
@@ -65,7 +65,7 @@ class PostProccess():
 
 if __name__ == "__main__":
     args = parse_args()
-    pp = PostProccess(args)
+    pp = PostProcess(args)
     init_path(args)
 
     filename = os.listdir(args.meshPath)
