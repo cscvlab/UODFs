@@ -26,7 +26,7 @@ In this journal manuscript, we significantly improve the speed of surface point 
 
 PS: All reconstruction results are **free of fine-tuning**.
 
-## Installation:Setup the environment
+## Installation: Setup the environment
 The version of PyTorch we use is 1.12.0 and the operating system is Ubuntu 20.04.
 
 ### Create environment
@@ -88,7 +88,7 @@ python scripts/PostProcessing.py
 ```
 If you want to use the single-point(S.P.) based GEP estimation method, you can use the following command.
 ```
-python scripts/test_single.py
+python scripts/FastUODF/test_single.py
 ```
 After that, you can utilize the following command after setting args.use_pcd_post_processing to False at line 75:
 ```
