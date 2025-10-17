@@ -6,13 +6,7 @@ This repository is the official implementation of our CVPR 2024 paper:
 
 **Links:** [[Project Page]](http://www.cscvlab.com/research/UODFs/index.html)      [[Paper]](https://openaccess.thecvf.com/content/CVPR2024/papers/Lu_Unsigned_Orthogonal_Distance_Fields_An_Accurate_Neural_Implicit_Representation_for_CVPR_2024_paper.pdf)        [[Video(bilibili)]](https://www.bilibili.com/video/BV19f421d77S/)       [[Video(youtube)]](https://www.youtube.com/watch?v=uuJYVKoixp0) 
 
-In addition, this repository provides the implementation of the newly updated work:
-
-**Unsigned Orthogonal Distance Fields: A Neural Implicit Representation for Fast and Accurate Reconstruction of Diverse 3D Shapes.**
-
-**FastUODFs' Links:** [[Project Page (Coming soon)]](http://www.cscvlab.com/research/fastUODFs/index.html)         [[Video(bilibili)]](https://www.bilibili.com/video/BV1Af6HY5EdS/)       [[Video(youtube)]](https://youtu.be/Qo-22KU1zl0) 
-
-In this journal manuscript, we significantly improve the speed of surface point estimation by introducing single-point prediction and tri-plane encoding.
+In addition, we significantly improve the speed of surface point estimation by introducing single-point prediction and tri-plane encoding: [[Video(bilibili)]](https://www.bilibili.com/video/BV1Af6HY5EdS/)       [[Video(youtube)]](https://youtu.be/Qo-22KU1zl0) In this work, 
 
 **Core idea in one sentence**. Different from SDF and UDF, each point in UODFs defines the distances along the three orthogonal directions (LR, FB, UD in the figure) and directly infers the nearest surface points (simulating the characteristics of the laser), avoiding the introduction of interpolation errors and improving the reconstruction accuracy.
 
